@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<!--
+  Aaron Tylicki
+  travel.html
+  04/27/2021-->
+<html lang=“en”>
+
+<head>
+    <title>Travel | Aaron Tylicki</title>
+    <meta name="description" content="Aaron has travelled from the canals of venice to the beaches of Costa Rica. Follow him on his journey." />
+    <meta charset=“utf-8”>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a class="homelink" href="index.html">
+
+            <img src="images/headshot.jpg" alt="Aaron's professional headshot" height="80" width="80" style="float:left;" class="rounded3" />
+            <div id="header_text">
+                <h2>Aaron Tylicki</h2>
+                <h4>Based in Tampa, FL</h4>
+            </div>
+        </a>
+
+        <nav>
+            <!-- nav items: home, education, professional, travel, contact info-->
+            <a id="menu-icon" onclick="hamburger()">
+                <div id="hamburger">&#9776</div>
+            </a>
+            <ul id="menu-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="prof.html">Professional</a></li>
+                <li><a href="travel.html" style="background-color: #FF4838; border-radius: 20px; padding: 10px;">Travel</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </nav>
+        <!--script for hamburger button, adapted from textbook-->
+        <script type="text/javascript">function hamburger() {
+                /* variables */
+                var menu = document.getElementById("menu-links");
+                var icon = document.getElementById("menu-icon");
+                var nav = document.getElementsByName("header");
+
+    /* if nav items are not showing on click of hamburger button, display menu items*/
+                if (menu.style.display === "none") {
+                    menu.style.display = "block";
+                    icon.style.display = "block";
+                    nav.style.height = "500px";
+                }
+                /* if nav items are showing on click of hamburger button, display menu items*/
+                else {
+                    menu.style.display = "none";
+                    icon.style.display = "block";
+
+
+                }
+
+}
+        </script>
+
+    </header>
+
+    <main>
+        <div class="content_block2">
+            <!--image on left side with contact cta on the right-->
+            <div class="container2">
+                <h1 style="margin-bottom:20px;">Travel</h1>
+                <p>
+                    As someone who loves to travel, the COVID-19 pandemic has been a
+                    tough time for me. Rather than discussing travel plans and where I want to go, lets take a step back and see where I've been.
+                    From the shores of Costa Rica, to the canals of Venice, the following slideshow will get you up to speed on my global journey so far. Enjoy!
+
+                </p>
+            </div>
+            <!--video collage about my travels (adapted from https://www.w3schools.com/howto/howto_js_slideshow.asp )-->
+            <!-- Slideshow container -->
+            <div class="slideshow-container" style="margin-bottom: 20px; border: 2px solid #FF4838; border-radius: 10px; padding: 10px;">
+
+                <div class="mySlides1">
+                    <img src="images/phoenix.jpg" alt="flyover of phoenix" style="width:100%">
+                </div>
+
+                <div class="mySlides1">
+                    <img src="images/yankees.jpg" alt="steinbrenner field" style="width:100%">
+                </div>
+
+                <div class="mySlides1">
+                    <img src="images/davisisland.jpg" alt="davis islands" style="width:100%">
+                </div>
+
+                <div class="mySlides1">
+                    <img src="images/eiffeltower.jpg" alt="eiffel tower" style="width:100%">
+                </div>
+
+                <div class="mySlides1">
+                    <img src="images/pressconf.jpg" alt="presser at thfc" style="width:100%">
+                </div>
+
+                <div class="mySlides1">
+                    <img src="images/graffiti.jpg" alt="graffiti in northern italy" style="width:100%">
+                </div>
+
+                <div class="mySlides1">
+                    <img src="images/rowdies.jpg" alt="tb rowdies stadium" style="width:100%">
+                </div>
+
+
+                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+            </div>
+        </div>
+
+
+
+        <script>var slideIndex = [1, 1];
+            var slideId = ["mySlides1", "mySlides2"]
+            showSlides(1, 0);
+            showSlides(1, 1);
+
+            function plusSlides(n, no) {
+                showSlides(slideIndex[no] += n, no);
+            }
+
+            function showSlides(n, no) {
+                var i;
+                var x = document.getElementsByClassName(slideId[no]);
+                if (n > x.length) { slideIndex[no] = 1 }
+                if (n < 1) { slideIndex[no] = x.length }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex[no] - 1].style.display = "block";
+            }</script>
+
+
+
+        <article class="grid2" style="margin-top:2.5%">
+            <!--Marketing-->
+            <section class="content_block3">
+                <div class="container">
+                    <h2 style="margin:1%;"><b>Italy</b></h2>
+                    <p>Travel Highlights</p>
+                    <ul class="unorderlistli">
+                        <li>Tours of Milan</li>
+                        <li>Serie A Football Match</li>
+                        <li>Tour of Lake Como</li>
+                        <li>3 Friendlies vs Local Teams</li>
+                    </ul>
+                </div>
+            </section>
+            <!--Information Systems-->
+            <section class="content_block3">
+                <div class="container">
+                    <h2 style="margin:1%;"><b>Costa Rica</b></h2>
+                    <p>Travel Highlights</p>
+                    <ul class="unorderlistli">
+                        <li>Ziplining in a Rainforest</li>
+                        <li>Pacific Island Resort</li>
+                        <li>Catamaran & Snorkeling</li>
+                        <li>3 Friendlies vs Local Teams</li>
+                    </ul>
+                </div>
+            </section>
+            <!--Extracurriculars-->
+            <section class="content_block3">
+                <div class="container">
+                    <h2 style="margin:1%;"><b>UK and France</b></h2>
+                    <p>Travel Highlights</p>
+                    <ul class="unorderlistli">
+                        <li>Eiffel Tower</li>
+                        <li>Tour of Tottenham Hotspur Stadium</li>
+                        <li>Travel via Underground</li>
+                        <li>Buckingham Palace</li>
+                    </ul>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <h4 style="font-size:15px">Contact me:</h4>
+        <p><a href="mailto:aaron.tylicki@spartans.ut.edu">via Email</a></p>
+        <p>&copy; 2021 AT Designs. <i>All Rights Reserved.</i></p>
+        <div class="socials grid">
+            <a class="socialicon" href="https://www.linkedin.com/in/atylicki/"><img class="social" src="images/li_logo.png" alt="linkedin logo" width="30px" /></a>
+            <a class="socialicon" href="https://www.instagram.com/atylicki9/"><img class="social" src="images/ig.png" alt="instagramlogo" width="30px" /></a>
+            <a class="socialicon" href="https://www.facebook.com/aaron.tylicki.5/"><img class="social" src="images/fbook.png" alt="facebook logo" width="30px" /></a>
+        </div>
+    </footer>
+    <script type="text/javascript" src=“scripts/script.js”></script>
+</body>
+
+</html>

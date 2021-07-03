@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<!--
+  Aaron Tylicki
+  education.html
+  04/27/2021-->
+<html lang=“en”>
+
+<head>
+    <title>Education | Aaron Tylicki</title>
+    <meta charset=“utf-8”>
+    <meta name="description" content="Aaron is an accomplished student who is involved both in and out of the classroom." />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a class="homelink" href="index.html">
+
+            <img src="images/headshot.jpg" alt="Aaron's professional headshot" height="80" width="80" style="float:left;" class="rounded3" />
+            <div id="header_text">
+                <h2>Aaron Tylicki</h2>
+                <h4>Based in Tampa, FL</h4>
+            </div>
+        </a>
+
+        <nav>
+            <!-- nav items: home, education, professional, travel, contact info-->
+            <a id="menu-icon" onclick="hamburger()">
+                <div id="hamburger">&#9776</div>
+            </a>
+            <ul id="menu-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html" style="background-color: #FF4838; border-radius: 20px; padding: 10px;">Education</a></li>
+                <li><a href="prof.html">Professional</a></li>
+                <li><a href="travel.html">Travel</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!--script for hamburger button-->
+        <script type="text/javascript">function hamburger() {
+                /* variables */
+                var menu = document.getElementById("menu-links");
+                var icon = document.getElementById("menu-icon");
+                var nav = document.getElementsByName("header");
+
+                /* if nav items are not showing on click of hamburger button, display menu items*/
+                if (menu.style.display === "none") {
+                    menu.style.display = "block";
+                    icon.style.display = "block";
+                    nav.style.height = "500px";
+                }
+                /* if nav items are showing on click of hamburger button, display menu items*/
+                else {
+                    menu.style.display = "none";
+                    icon.style.display = "block";
+
+
+                }
+
+            }</script>
+
+    </header>
+
+    <main>
+        <div class="content_block2">
+            <!--image on left side with contact cta on the right-->
+            <div class="container2">
+                <h1 style="margin-bottom:20px;">Education</h1>
+                <p style="margin-bottom:20px;">
+                    Currently a Senior at the University of Tampa, I maintatin a 3.97 GPA while pursuing a Bachelor of Science in Marketing
+                    and a Minor in Management Information Systems.
+                </p>
+
+                <a href="https://www.ut.edu/">
+                    <div class="button">
+                        <p>Learn more about UT</p>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <h2 class="mhidden">Classes by Semester</h2>
+                <table class="mhidden">
+                    <tr>
+                        <th>Semester</th>
+                        <th colspan="4">Class</th>
+                    </tr>
+                    <tr>
+                        <th>Semester 1</th>
+                        <td>Financial Accounting</td>
+                        <td>Business 101</td>
+                        <td>Writing and Research</td>
+                        <td>Environmental Science</td>
+                    </tr>
+                    <tr>
+                        <th>Semester 2</th>
+                        <td>Microeconomics</td>
+                        <td>Managerial Accounting</td>
+                        <td>Music Theory</td>
+                        <td>Business Law</td>
+                    </tr>
+                    <tr>
+                        <th>Semester 3</th>
+                        <td>MIS</td>
+                        <td>Prin. of Management</td>
+                        <td>Business Stats</td>
+                        <td>Speech for Business</td>
+                    </tr>
+                    <tr>
+                        <th>Semester 4</th>
+                        <td>Financial Management</td>
+                        <td>Application Development</td>
+                        <td>Prin. of Marketing</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Semester 5</th>
+                        <td>Buyer Behavior</td>
+                        <td>Marketing Research</td>
+                        <td>Sales and Branding</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Semester 6</th>
+                        <td>Global Marketing</td>
+                        <td>Adv. Application Development</td>
+                        <td>Information Security</td>
+                        <td></td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+
+
+
+        <article class="grid2" style="margin-top:2.5%">
+            <!--Marketing-->
+            <section class="content_block3">
+                <div class="container">
+                    <h2 style="margin:1%;"><b>Marketing</b></h2>
+                    <p>Relevant Coursework and Curriculum:</p>
+                    <ul class="unorderlistli">
+                        <li>Marketing Principles</li>
+                        <li>Buyer Behavior</li>
+                        <li>Professional Selling</li>
+                        <li>Global Marketing</li>
+                        <li>Marketing Research</li>
+                    </ul>
+                </div>
+                <a href="https://www.ut.edu/academics/sykes-college-of-business/marketing-degree">
+                    <div class="button">
+                        <p>Learn more about UT Marketing</p>
+                    </div>
+                </a>
+            </section>
+            <!--Information Systems-->
+            <section class="content_block3">
+                <div class="container">
+                    <h2 style="margin:1%;"><b>Information Systems</b></h2>
+                    <p>Relevant Coursework and Curriculum:</p>
+                    <ul class="unorderlistli">
+                        <li>Pyton</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>Information/Cyber Security</li>
+                    </ul>
+                </div>
+                <a href="https://www.ut.edu/academics/sykes-college-of-business/information-and-technology-management-(itm)-degrees/management-information-systems-degree">
+                    <div class="button">
+                        <p>Learn more about UT MIS</p>
+                    </div>
+                </a>
+            </section>
+            <!--Extracurriculars-->
+            <section class="content_block3">
+                <div class="container">
+                    <h2 style="margin:1%;"><b>Extra Curriculars</b></h2>
+                    <p>Organizations and Positions:</p>
+                    <ul class="unorderlistli">
+                        <li>Delta Sigma Pi (VP Fundraising and Webmaster)</li>
+                        <li>Beta Gamma Sigma Honor Society</li>
+                        <li>American Marketing Association</li>
+                        <li>UT Men's Club Soccer</li>
+                        <li>UT Swim Team Mascot</li>
+                    </ul>
+                </div>
+                <a href="https://www.ut.edu/campus-life/student-organizations">
+                    <div class="button">
+                        <p>Learn more about UT Student Life</p>
+                    </div>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <h4 style="font-size:15px">Contact me:</h4>
+        <p><a href="mailto:aaron.tylicki@spartans.ut.edu">via Email</a></p>
+        <p>&copy; 2021 AT Designs. <i>All Rights Reserved.</i></p>
+        <div class="socials grid">
+            <a class="socialicon" href="https://www.linkedin.com/in/atylicki/"><img class="social" src="images/li_logo.png" alt="linkedin logo" width="30px" /></a>
+            <a class="socialicon" href="https://www.instagram.com/atylicki9/"><img class="social" src="images/ig.png" alt="instagramlogo" width="30px" /></a>
+            <a class="socialicon" href="https://www.facebook.com/aaron.tylicki.5/"><img class="social" src="images/fbook.png" alt="facebook logo" width="30px" /></a>
+        </div>
+    </footer>
+    <script src=“scripts/script.js”></script>
+</body>
+
+</html>

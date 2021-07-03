@@ -1,0 +1,210 @@
+﻿<!DOCTYPE html>
+<!--
+  Aaron Tylicki
+  index.html
+  04/27/2021-->
+<html lang=“en”>
+
+<head>
+    <title>Home | Aaron Tylicki</title>
+    <meta name="description" content="Welcome to Aaron's website! This website is essentially my virtual resume." />
+    <meta charset=“utf-8”>
+
+    <!--Link stylesheet-->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <!--meta viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <header>
+        <a class="homelink" href="index.html">
+            <figure>
+                <img src="images/headshot.jpg" alt="Aaron's professional headshot" height="80" width="80" style="float:left;" class="rounded3" />
+                <figcaption id="header_text">
+                    <h2>Aaron Tylicki</h2>
+                    <h4>Based in Tampa, FL</h4>
+                </figcaption>
+            </figure>
+        </a>
+
+        <nav>
+            <!-- nav items: home, education, professional, travel, contact info-->
+            <a id="menu-icon" onclick="hamburger()">
+                <div id="hamburger">&#9776</div>
+            </a>
+            <ul id="menu-links">
+                <li><a href="index.html" style="background-color: #FF4838; border-radius: 20px; padding: 10px;">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="prof.html">Professional</a></li>
+                <li><a href="travel.html">Travel</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+
+        </nav>
+        <!--script for hamburger button-->
+        <script type="text/javascript">function hamburger() {
+                /* variables */
+                var menu = document.getElementById("menu-links");
+                var icon = document.getElementById("menu-icon");
+                var nav = document.getElementsByName("header");
+
+                /* if nav items are not showing on click of hamburger button, display menu items*/
+                if (menu.style.display === "none") {
+                    menu.style.display = "block";
+                    icon.style.display = "block";
+                    nav.style.height = "500px";
+                }
+                /* if nav items are showing on click of hamburger button, display menu items*/
+                else {
+                    menu.style.display = "none";
+                    icon.style.display = "block";
+
+
+                }
+
+            }</script>
+
+
+    </header>
+    <main>
+        <!-- here there will be a large hero image linked to my contact page with 3 content squares below-->
+        <div class="head_image">
+            <!--Insert large image similar to a coverphoto with text overlay-->
+            <img src="images/surfing1.JPG" alt="aaron surfing" class="heroimg" />
+            <!--script that types texrt out -->
+            <div class="hero-text">
+                <h1>Aaron Tylicki</h1>
+                <h2>Student - Professional - Traveler</h2>
+                <!--resume link-->
+                <a href="files/resume2021.docx">
+                    <div class="button">
+                        <p>Download my Resume</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!--About Me and Contact CTA-->
+        <article class="content_block2">
+            <!--image on left side with contact cta on the right-->
+            <section class="container2">
+                <h2 style="margin-bottom:20px;">About Me</h2>
+                <audio controls>
+                    <source src="media/welcome.mp3" type="audio/mp3" />
+                    <source src="media/welcome.wav" typeof="audio/wav" />
+                    <p>Your browser does not support the audio element.</p>
+                </audio>
+                <p style="margin-bottom:20px;">
+                    Hi! My name is Aaron and I am currently a Marketing and Information Systems student at the University of Tampa.
+                    During the week, I split my time between my classes and my internship at InComm Payments working in Automation.
+                    In my free time, you can find me in a Pub watching a English soccer game, on the beach with my friends, or relaxing with my family.
+                    I also love to travel! I have been to 7 countries and 17 states (and counting).
+                    I'm always open to new opportunities and would love to connect with you!
+                </p>
+
+                <a href="contact.html">
+                    <div class="button">
+                        <p>Let's Chat!</p>
+                    </div>
+                </a>
+            </section>
+        </article>
+
+        <article class="grid" style="margin-top:2.5%">
+            <!--School Block-->
+            <a href="education.html">
+                <section class="content_block">
+                    <div class="mhidden">
+                        <img src="images/ut_342x209.JPG" alt="ut minarets" height="80%" width="65%" class="rounded1" style="margin-top: 20px;"/>
+                    </div>
+                    <div class="container">
+                        <h2><b>Education</b></h2>
+                        <p>Let's hit the books.</p>
+                    </div>
+                </section>
+            </a>
+            <!--Professional Block-->
+            <a href="prof.html">
+                <section class="content_block">
+                    <div class="mhidden">
+                        <img src="images/skyline.JPG" alt="tampa skyline" height="80%" width="65%" class="rounded1" style="margin-top: 20px;"/>
+                    </div>
+                    <div class="container">
+                        <h2><b>Professional</b></h2>
+                        <p>See my experiences!</p>
+                    </div>
+                </section>
+            </a>
+            <!--Travel Block-->
+
+            <a href="travel.html">
+                <section class="content_block">
+                    <div class="mhidden">
+                        <img src="images/stadium1.JPG" alt="spurs stadium" height="80%" width="65%" class="rounded1" style="margin-top: 20px;"/>
+                    </div>
+                    <div class="container">
+                        <h2><b>Travel</b></h2>
+                        <p>Spin the globe!</p>
+                    </div>
+                </section>
+            </a>
+
+            <!--Resume Block-->
+            <a href="files/resume2021.docx">
+                <section class="content_block">
+                    <div class="mhidden">
+                        <img src="images/resume.jpeg" alt="resume stock photo" height="76%" width="65%" class="rounded1" style="margin-top: 20px;"/>
+                    </div>
+                    <div class="container">
+                        <h2><b>Hiring?</b></h2>
+                        <p>Check out my resume.</p>
+                    </div>
+                </section>
+            </a>
+            <!--Contact Block-->
+            <a href="contact.html">
+                <section class="content_block">
+                    <div class="mhidden">
+                        <img src="images/work.JPG" alt="coffee cup and laptop" height="80%" width="65%" class="rounded1" style="margin-top: 20px;"/>
+                    </div>
+                    <div class="container">
+                        <h2><b>Contact me!</b></h2>
+                        <p>Lets talk sometime.</p>
+                    </div>
+                </section>
+            </a>
+            <!--LinkedIn Block-->
+
+            <a href="https://www.linkedin.com/in/atylicki/">
+                <section class="content_block">
+                    <div class="mhidden">
+                        <img src="images/linkedinlogo.png" alt="linkedin logo" height="80%" width="40%" style="margin-top: 20px;"/>
+                    </div>
+                    <div class="container">
+                        <h2><b>Networking?</b></h2>
+                        <p>Connect on Linkedin!</p>
+                    </div>
+                </section>
+            </a>
+        </article>
+    </main>
+    <footer>
+        <h4 style="font-size:15px">Contact me:</h4>
+        <p><a href="mailto:aaron.tylicki@spartans.ut.edu">via Email</a></p>
+        <p>&copy; 2021 AT Designs. <i>All Rights Reserved.</i></p>
+        <div class="socials grid">
+            <a class="socialicon" href="https://www.linkedin.com/in/atylicki/"><img class="social" src="images/li_logo.png" alt="linkedin logo" width="30px" /></a>
+            <a class="socialicon" href="https://www.instagram.com/atylicki9/"><img class="social" src="images/ig.png" alt="instagramlogo" width="30px" /></a>
+            <a class="socialicon" href="https://www.facebook.com/aaron.tylicki.5/"><img class="social" src="images/fbook.png" alt="facebook logo" width="30px" /></a>
+        </div>
+    </footer>
+    <script src=“scripts/script.js”></script>
+</body>
+
+</html>
+

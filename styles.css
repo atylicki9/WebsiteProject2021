@@ -1,0 +1,600 @@
+﻿/*
+    Name: Aaron Tylicki
+    File Name: styles.css
+    Date; 04/27/2021
+*/
+
+/*CSS Reset*/
+body, header, nav, main, article, section, aside, figure, figcaption, ul, li, #content_block , h1, h2, h3, h4, h5, h6, p, a, #head_image, #about_content, img, #introduction, #prof_content  {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/*body*/
+body {
+    background-color: #0F1E23;
+}
+
+/*Fonts*/
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    text-decoration-style: solid;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color: white;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FF4838;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: white;
+    margin:1%;
+}
+
+    a {
+        color: white;
+        text-decoration: none;
+        text-align:center;
+    }
+
+/*lists*/
+ul {
+    list-style: none;
+    color: white;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    font-size: 16px;
+    text-align:left;
+}
+
+.unorderlistli {
+    padding-left:5%;
+    margin:1.5%;
+
+}
+
+/*header*/
+header {
+    background-color: #0F1E23;
+    display: block;
+    overflow: auto;
+    padding: 10px 10px;
+    width: 100%;
+}
+/*my name and where i am from*/
+#header_text {
+    float: left;
+    padding: 20px;
+}
+
+
+/*nav*/
+nav {
+    background-color: #0F1E23;
+    float: right;
+    overflow: auto;
+    width: 70%;
+}
+    /*nav list items*/
+    nav ul {
+        font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+        list-style-type: none;
+        display: block;
+        width: 100%;
+        float: right;
+    }
+
+    nav li {
+        display: inline-block;
+        float: left;
+        margin:  20px 1.5%;
+
+    }
+
+        nav li a {
+            color: white;
+            display: inline-block;
+            float: left;
+            text-decoration: none;
+            padding: 10px;
+        }
+  
+    /*adds hover color to list items in nav*/
+        nav li a:hover {
+            display: inline-block;
+            background-color: #FF4838;
+            border-radius: 20px;
+            padding: 10px;
+        }
+
+.menu-toggle {
+    display: none;
+}
+
+    /*hamburger button hidden unless on mobile*/
+    #menu-icon {
+        display: none;
+    }
+
+
+
+/*main*/
+main {
+    background-color: #162B32;
+   overflow:auto;
+    padding:20px;
+}
+
+/*style rules for content, buttons, and containers*/
+
+    /*content block styles
+        1. single block w/ orange hover
+        2. single blcok w/ 100% width
+        3. same as block 1 but w/ no hover since it is not clickable
+    */
+    .content_block {
+        background-color: #0F1E23;
+        /*border rules*/
+        border-style: solid;
+        border-color: #FF4838;
+        border-width: 5px;
+        display: grid;
+        width: auto;
+        height: 350px;
+        border-radius: 10px;
+        overflow: auto;
+        padding-bottom: 25px;
+        margin-bottom:10px;
+    }
+
+    /*hover rules for content block changes color to orange*/
+        .content_block:hover {
+            background-color: #FF4838;
+        }
+
+
+.content_block2 {
+    left: 0;
+    background-color: #0F1E23;
+    display: grid;
+    /*border rules*/
+    border-style: solid;
+    border-color: #FF4838;
+    border-width: 5px;
+    border-radius: 10px;
+    margin-top: 20px;
+    overflow: auto;
+}
+    .content_block3 {
+        background-color: #0F1E23;
+        /*border rules*/
+        border-style: solid;
+        border-color: #FF4838;
+        border-width: 5px;
+        display: grid;
+        width: auto;
+        height: auto;
+        border-radius: 10px;
+        overflow: auto;
+        padding-bottom: 25px;
+    }
+
+    /*containers within content blocks*/
+    .container {
+        text-align: center;
+    }
+
+    .container2 {
+        text-align: center;
+        padding: 5%;
+    }
+
+
+    /*style rules for tables*/
+table {
+    border-collapse: collapse;
+    border: 3px solid #FF4838;
+    /*90% width with 5% on each side so it looks good*/
+    width: 90%;
+    margin: 2% 5%;
+}
+
+th {
+    border-collapse: collapse;
+    border: 1px solid white;
+    color: white;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    border-collapse: collapse;
+    border: 1px solid white;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding: 10px;
+}
+
+/*contact pagestyles*/
+#map {
+    text-align: center;
+    margin-top: 2%;
+}
+
+/*contact form*/
+#contactform {
+    margin-top: 2%;
+    padding: 2%
+}
+
+#contactform h2, #contactform h4 {
+    text-align: center;
+}
+label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: white;
+    margin-right: 2%;
+    display:block;
+    margin: 10px;
+}
+
+input, textarea {
+    border: 3px solid #FF4838;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: white;
+    background-color: #0F1E23;
+    padding: 8px;
+}
+
+#contact_info {
+    margin-top: 4%;
+}
+
+#contact_info p {
+    margin-top: 4%;
+}
+
+
+     /* Grid Style Rules*/
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 2%;
+    }
+
+    .grid2 {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 2%;
+    }
+
+
+.griditem {
+    margin: 2%;
+}
+
+
+    /*Rules for buttons */
+    .button {
+        display: inline-block;
+        background-color: #FF4838;
+        border-radius: 20px;
+        position: relative;
+        padding: 10px 20px;
+        text-align: center;
+  
+    }
+
+    .button2 {
+        display: inline-block;
+        background-color: #FF4838;
+        border-radius: 20px;
+        position: relative;
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+    /*additional content style rules*/
+
+        /*rounded edges*/
+        .rounded1 {
+            border-radius: 30px;
+        }
+
+        .rounded2 {
+            border-radius: 50px;
+        }
+        /*rounded 2 but hidden on mobile*/
+        .rounded3 {
+            border-radius: 50px;
+        }
+
+        /*Responsive Images*/
+img {
+    display: block;
+    max-width: 100%;
+    margin: 0px auto;
+    box-shadow: 10px 10px 8px #0F1E23;
+}
+
+
+
+        /* Place text in the middle of the image. Used only on homepage*/
+        .hero-text {
+            text-align: left;
+            position: absolute;
+            top: 50%;
+            left: 25%;
+            transform: translate(-50%, -50%);
+            color: #162B32;
+        }
+
+/*Slideshow CSS from https://www.w3schools.com/howto/howto_js_slideshow.asp this is not my own however i adapted sizing and images to fit the theme*/ 
+
+* {
+    box-sizing: border-box
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 40%;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/*footer*/
+footer {
+    text-align: center;
+    background-color: #0F1E23;
+    position: static;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    padding-right: 25px;
+    margin-top: 35px;
+
+}
+.socials {
+    display: block;
+    width: 100%;
+    float: right;
+    text-align: center;
+}
+.socialicon {
+    display: block;
+    margin: 10px;
+
+}
+
+.social {
+    display: block;
+    float: right;
+    margin: 10px 15px;
+    text-align: center;
+}
+
+
+/*Media Queries for Viewports */
+
+/* Media Query for Tablet/Small Desktop Viewport */
+@media screen and (max-width: 1406px), print {
+    .content_block {
+        display: grid;
+        padding: 10px;
+
+    }
+    .grid {
+        grid-template-columns: auto auto;
+    }
+
+    /*for pages with only 3 grid items, show only 1 per row*/
+    .grid2 {
+        grid-template-columns: auto;
+    }
+
+   
+}
+
+/*Media Query for Mobile Viewport*/
+@media screen and (max-width: 915px), print {
+    /* header and nav*/
+    header {
+        float: none;
+    }
+
+    #header_text {
+        text-align: left;
+        padding: 25px;
+        float: none;
+    }
+
+    .homelink {
+        width: 50%;
+        float: left;
+    }
+
+    #menu-links {
+        display: none;
+        text-align:center;
+        width: 100%;
+    }
+
+    nav {
+        float: right;
+        width: 150px;
+        height: 100%;
+        padding-right: 20px;
+        overflow: auto;
+    }
+
+    #menu-icon {
+        display: block;
+        font-size: x-large;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    /*Content*/
+    .grid {
+        grid-template-columns: auto;
+    }
+
+    /*hero image */
+    .hero-text {
+        text-align: center;
+        position: relative;
+        top: 45%;
+        left: 50%;
+        color: #162B32;
+    }
+
+    .content_block {
+        height: auto;
+    }
+
+    .rounded3 {
+        display: none;
+    }
+
+
+    /*Fonts*/
+    h1 {
+        font-size: x-large;
+    }
+    h2 {
+        font-size: larger;
+    }
+
+    p {
+        font-size: small;
+    }
+    /*hidden for mobile*/
+    .mhidden {
+        display: none;
+    }
+
+}
+
+
+
+

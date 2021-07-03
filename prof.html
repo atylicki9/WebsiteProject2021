@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<!--
+  Aaron Tylicki
+prof.html
+  04/27/2021-->
+<html lang=“en”>
+
+<head>
+    <title>Professional | Aaron Tylicki</title>
+    <meta name="description" content="Aaron is and Automation Engineer with a background in QA and UAT." />
+    <meta charset=“utf-8”>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a class="homelink" href="index.html">
+
+            <img src="images/headshot.jpg" alt="Aaron's professional headshot" height="80" width="80" style="float:left;" class="rounded3" />
+            <div id="header_text">
+                <h2>Aaron Tylicki</h2>
+                <h4>Based in Tampa, FL</h4>
+            </div>
+        </a>
+
+        <nav>
+            <!-- nav items: home, education, professional, travel, contact info-->
+            <a id="menu-icon" onclick="hamburger()">
+                <div id="hamburger">&#9776</div>
+            </a>
+            <ul id="menu-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="prof.html" style="background-color: #FF4838; border-radius: 20px; padding: 10px;">Professional</a></li>
+                <li><a href="travel.html">Travel</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </nav>
+        <!--script for hamburger button-->
+        <script type="text/javascript">function hamburger() {
+                /* variables */
+                var menu = document.getElementById("menu-links");
+                var icon = document.getElementById("menu-icon");
+                var nav = document.getElementsByName("header");
+                /* if nav items are not showing on click of hamburger button, display menu items*/
+                if (menu.style.display === "none") {
+                    menu.style.display = "block";
+                    icon.style.display = "block";
+                    nav.style.height = "500px";
+                }
+                /* if nav items are showing on click of hamburger button, display menu items*/
+                else {
+                    menu.style.display = "none";
+                    icon.style.display = "block";
+
+
+                }
+
+            }</script>
+
+    </header>
+
+
+    <main>
+        <div class="content_block2">
+            <!--image on left side with contact cta on the right-->
+            <div class="container2">
+                <h1 style="margin-bottom:20px;">Professional</h1>
+                <p style="margin-bottom:20px;">
+                    I am a motivated Quality Assurance (QA) Specialist with experience in multiple Agile Software Development projects. Currently pursuing a B.S. in Marketing with a Minor in Management Information Systems at the University of Tampa. Inclined in both school and work, I maintain a 3.97 GPA while working as a User Acceptance Testing Intern at InComm Payments.
+                    Open to opportunities in the Software Development space after graduation in December 2021.
+                </p>
+
+                <a href="https://www.linkedin.com/in/atylicki/" >
+                    <div class="button">
+                        <p>Visit my LinkedIn</p>
+                    </div>
+                </a>
+
+                <h2 style="margin: 30px 0;">Check out my Professional Fraternity!</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/eQPpT46F5tA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+
+
+        <article class="grid2" style="margin-top:2.5%">
+            <!--Proforma-->
+            <section class="content_block3">
+                <div class="container">
+                    <h2 style="margin:1%;"><b>Proforma</b></h2>
+                    <p>Duties and Experience</p>
+                    <ul class="unorderlistli">
+                        <li>Quality Assurance Tester</li>
+                        <li>Exposure to Written Software Requirements</li>
+                        <li>Averaged 3 Bugs a Day</li>
+                        <li>Collaborated with Dev Team</li>
+                    </ul>
+                </div>
+                <a href="https://www.proforma.com/">
+                    <div class="button">
+                        <p>Learn more about Proforma</p>
+                    </div>
+                </a>
+            </section>
+            <!--Incomm-->
+            <section class="content_block3">
+                <div class="container">
+                    <h2 style="margin:1%;"><b>InComm Payments</b></h2>
+                    <p>Duties and Experience</p>
+                    <ul class="unorderlistli">
+                        <li>Automation Scripts with C#</li>
+                        <li>User Acceptance Testing</li>
+                        <li>Experience with Microsoft Azure</li>
+                        <li>Participate in EPIC Intern Program</li>
+                    </ul>
+                </div>
+                <a href="https://www.incomm.com/?gclid=Cj0KCQjwppSEBhCGARIsANIs4p6FnpuoxGBqUlxbQqQ0djG5kG8Tm-XGADgoc5CDmv22TAtskkfTB2EaAnzPEALw_wcB">
+                    <div class="button">
+                        <p>Learn more about InComm</p>
+                    </div>
+                </a>
+            </section>
+            <!--MyArea-->
+            <section class="content_block3">
+                <div class="container">
+                    <h2 style="margin:1%;"><b>MyArea Network</b></h2>
+                    <p>Duties and Experience</p>
+                    <ul class="unorderlistli">
+                        <li>Managed Offshore Dev Team</li>
+                        <li>Jira Admin</li>
+                        <li>Managed Remote Intern</li>
+                        <li>Managed 300+ Dev Tasks to Completion </li>
+                    </ul>
+                </div>
+                <a href="https://www.myareanetwork.com/">
+                    <div class="button">
+                        <p>Learn more about MyArea Network</p>
+                    </div>
+                </a>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <h4 style="font-size:15px">Contact me:</h4>
+        <p><a href="mailto:aaron.tylicki@spartans.ut.edu">via Email</a></p>
+        <p>&copy; 2021 AT Designs. <i>All Rights Reserved.</i></p>
+        <div class="socials grid">
+            <a class="socialicon" href="https://www.linkedin.com/in/atylicki/"><img class="social" src="images/li_logo.png" alt="linkedin logo" width="30px" /></a>
+            <a class="socialicon" href="https://www.instagram.com/atylicki9/"><img class="social" src="images/ig.png" alt="instagramlogo" width="30px" /></a>
+            <a class="socialicon" href="https://www.facebook.com/aaron.tylicki.5/"><img class="social" src="images/fbook.png" alt="facebook logo" width="30px" /></a>
+        </div>
+    </footer>
+    <script src=“scripts/script.js”></script>
+</body>
+
+</html>

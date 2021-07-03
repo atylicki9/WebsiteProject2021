@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<!--
+  Aaron Tylicki
+  contact.html
+  04/27/2021-->
+<html lang=“en”>
+
+<head>
+    <title>Contact | Aaron Tylicki</title>
+    <meta name="description" content="Contact Information and Form for Aaron Tylicki. Contact me today!" />
+    <meta charset=“utf-8”>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <header>
+        <a class="homelink" href="index.html">
+            <figure>
+                <img src="images/headshot.jpg" alt="Aaron's professional headshot" height="80" width="80" style="float:left;" class="rounded3" />
+                <figcaption id="header_text">
+                    <h2>Aaron Tylicki</h2>
+                    <h4>Based in Tampa, FL</h4>
+                </figcaption>
+            </figure>
+        </a>
+
+        <nav>
+            <!-- nav items: home, education, professional, travel, contact info-->
+            <a id="menu-icon" onclick="hamburger()">
+                <div id="hamburger">&#9776</div>
+            </a>
+            <ul id="menu-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="prof.html">Professional</a></li>
+                <li><a href="travel.html">Travel</a></li>
+                <li><a href="contact.html" style="background-color: #FF4838; border-radius: 20px; padding: 10px;">Contact</a></li>
+            </ul>
+
+        </nav>
+        <!--script for hamburger button-->
+        <script type="text/javascript">function hamburger() {
+                /* variables */
+                var menu = document.getElementById("menu-links");
+                var icon = document.getElementById("menu-icon");
+                var nav = document.getElementsByName("header");
+
+                /* if nav items are not showing on click of hamburger button, display menu items*/
+                if (menu.style.display === "none") {
+                    menu.style.display = "block";
+                    icon.style.display = "block";
+                    nav.style.height = "500px";
+                }
+                /* if nav items are showing on click of hamburger button, display menu items*/
+                else {
+                    menu.style.display = "none";
+                    icon.style.display = "block";
+
+
+                }
+
+            }</script>
+    </header>
+
+    <main>
+        <div class="content_block3" style="overflow:auto; margin: 3%; text-align: center;">
+            <h1>Contact Me!</h1>
+            <h4 style="font-size:x-large; padding-bottom:10px; border-bottom: 2px solid">I'd love to hear more about you!</h4>
+            <div class="grid">
+                <div id="contactform">
+                    <form>
+                        <h2> Lets have a Chat!</h2>
+                        <h4>Please fill out the survey below:</h4>
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required />
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required />
+                        <label for="phone">Phone #</label>
+                        <input type="tel" id="phone" name="phone" required />
+                        <label for="comments">Comments</label>
+                        <textarea id="comments" name="comments" rows="3" cols="35"></textarea>
+                        <br />
+                        <input type="submit" id="submit" value="Submit" class="button2" />
+                    </form>
+                </div>
+                <div id="contact_info">
+                    <h2> Contact Info</h2>
+                    <p>Aaron Tylicki</p>
+                    <p>401 W Kennedy Blvd</p>
+                    <p>Tampa, FL 33606</p>
+                    <p><a href="mailto:aaron.tylicki@spartans.ut.edu">via Email</a></p>
+                    <p><a href="tel:7173772255">via Mobile</a></p>
+                </div>
+                <div id="map" class="mhidden" style=" margin: 20px; height:90%; width: 100%; ">
+                    <h2>Find me here!</h2>
+                    <h4>The University of Tampa</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13292.036762316447!2d-82.46235839995977!3d27.942605108477185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2c486790540f7%3A0x4bbb221fd92c55d9!2sThe%20University%20of%20Tampa!5e0!3m2!1sen!2sus!4v1613187902119!5m2!1sen!2sus" width="80%" height="75%" frameborder="0" style="border:0; margin:5%; float: right;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <h4 style="font-size:15px">Contact me:</h4>
+        <p><a href="mailto:aaron.tylicki@spartans.ut.edu">via Email</a></p>
+        <p>&copy; 2021 AT Designs. <i>All Rights Reserved.</i></p>
+        <div class="socials grid">
+            <a class="socialicon" href="https://www.linkedin.com/in/atylicki/"><img class="social" src="images/li_logo.png" alt="linkedin logo" width="30px" /></a>
+            <a class="socialicon" href="https://www.instagram.com/atylicki9/"><img class="social" src="images/ig.png" alt="instagramlogo" width="30px" /></a>
+            <a class="socialicon" href="https://www.facebook.com/aaron.tylicki.5/"><img class="social" src="images/fbook.png" alt="facebook logo" width="30px" /></a>
+        </div>
+    </footer>
+    <script src=“scripts/script.js”></script>
+</body>
+
+</html>
